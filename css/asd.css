@@ -1,0 +1,114 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Verdana";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .top-bar {
+    background: linear-gradient(to right, #4d4b4b 0%, #626160 51%, #3f352f 100%);
+    padding: 0.5rem 0;
+    
+  }
+  .float-right {
+    float: right;
+  }
+  
+  .navbar {
+    border-bottom: 5px solid #615e5c;
+    background-color: #fff;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    color: #63605d !important;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }  
+  .carousel {
+    padding: auto;
+  }
+  .carousel-inner {
+      border-radius: 5%;
+      overflow: hidden;
+  }
+  
+  .content {
+    position: relative;
+    padding-top: 9em;
+  }
+  
+  .section1{
+    border: solid;
+  }
+  .cl1{
+    border: solid;
+    
+  }
+  .section2,.section3
+  {
+    margin-top: 8em; 
+  }
+  h1,.card-title {
+    color: #6b6661;
+  }
+  
+  .section2 .card {
+    box-shadow: 0 0 20px #ccc;
+  }
+  .section2 .card img {
+    width: auto;
+    height: auto;
+  }
+  .section2 .card-footer a:link {
+    color: #121213; 
+  }
+  .section2 .card-footer a:visited {
+    color: #38383a; 
+  }
+  .section2 .card-footer a:hover {
+    color: #69615b;
+  }
+  
+  .section3 .input-group-text{
+    width: 12em;
+  }
+  .section3 .btn-primary{
+    width: 15em;
+    height: 3em;
+  }
+  
+  #raz {
+    visibility: hidden;
+  }
+  
+  #raz span {
+    visibility: visible;
+  }
+  
+  #raz:hover {
+    visibility: visible;
+  }
+  
+  #raz div {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 40%;
+    margin: auto;
+    box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(115, 115, 115, 0.64);
+    background: #FFFFFF;  
+    border-radius: 5px;  
+  }
+  
+  
