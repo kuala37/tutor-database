@@ -191,6 +191,22 @@
 
 
 
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages/icons/mdi.html">
+              <i class="mdi mdi-emoticon menu-icon"></i>
+              <span class="menu-title">Успеваемость</span>
+            </a>
+          </li>
+          <?php if($_COOKIE['user_admin'] == '1' && $_COOKIE['user'] !=''):?>
+            <li class="nav-item">
+            <a class="nav-link" href="pages/students/student.php">
+              <i class="mdi mdi-account-multiple menu-icon"></i>
+              <span class="menu-title">База данных</span>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="auth">
               <i class="mdi mdi-table-large menu-icon"></i>
@@ -207,20 +223,6 @@
                 </li>
               </ul>
             </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="pages/icons/mdi.html">
-              <i class="mdi mdi-emoticon menu-icon"></i>
-              <span class="menu-title">Успеваемость</span>
-            </a>
-          </li>
-          <?php if($_COOKIE['user_admin'] == '1' && $_COOKIE['user'] !=''):?>
-            <li class="nav-item">
-            <a class="nav-link" href="pages/students/student.php">
-              <i class="mdi mdi-account-multiple menu-icon"></i>
-              <span class="menu-title">База данных</span>
-            </a>
           </li>
           <?php endif;?>
           <li class="nav-item">
