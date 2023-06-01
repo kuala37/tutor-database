@@ -144,7 +144,7 @@
                 Регистрация
               </a>
               <?php else:?>
-                <a href="form_valid/exit.php." class="dropdown-item">
+                <a href="form_valid/exit.php" class="dropdown-item">
                 <i class="mdi mdi-logout text-primary"></i>
                 Выход
               </a>
@@ -168,7 +168,7 @@
               <span class="menu-title">Личный кабинет</span>
             </a>
           </li>
-          <?php if($_COOKIE['user_admin'] == '0'):?>
+          
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="mdi mdi-spellcheck menu-icon"></i>
@@ -208,13 +208,6 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/students/student.php">
-              <i class="mdi mdi-account-multiple menu-icon"></i>
-              <span class="menu-title">База данных</span>
-            </a>
-          </li>
-
 
           <li class="nav-item">
             <a class="nav-link" href="pages/icons/mdi.html">
@@ -222,7 +215,7 @@
               <span class="menu-title">Успеваемость</span>
             </a>
           </li>
-          <?php else:?>
+          <?php if($_COOKIE['user_admin'] == '1' && $_COOKIE['user'] !=''):?>
             <li class="nav-item">
             <a class="nav-link" href="pages/students/student.php">
               <i class="mdi mdi-account-multiple menu-icon"></i>
