@@ -236,6 +236,8 @@
     </script>
 </head>
 <body>
+
+    <?php if($_COOKIE['user_admin'] == '1' && $_COOKIE['user'] !=''):?>
     <div class="container">
         <h1>Таблица Competition</h1>
 
@@ -322,5 +324,6 @@
             ?>
         </table>
     </div>
+    <?php endif;?>
 </body>
 </html>
