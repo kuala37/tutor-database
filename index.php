@@ -190,9 +190,6 @@
           </li>
 
 
-
-
-
           <li class="nav-item">
             <a class="nav-link" href="pages/icons/mdi.html">
               <i class="mdi mdi-emoticon menu-icon"></i>
@@ -201,7 +198,7 @@
           </li>
           <?php if($_COOKIE['user_admin'] == '1' && $_COOKIE['user'] !=''):?>
             <li class="nav-item">
-            <a class="nav-link" href="pages/students/student.php">
+            <a class="nav-link" href="pages/database/database.php">
               <i class="mdi mdi-account-multiple menu-icon"></i>
               <span class="menu-title">База данных</span>
             </a>
